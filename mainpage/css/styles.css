@@ -1,0 +1,89 @@
+.bg-teal , .btn-teal{
+    background-color: #0b4646 !important;
+}
+.text-teal{
+    color: #0b4646 !important;
+}
+.carousel .carousel-indicators li {
+    height: 5px;
+    width: 30px;
+    border-radius: 0% !important;
+    cursor: pointer;
+}
+.c_image{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0b4646;
+}
+
+
+/* ---------------- Trainer Card -------------- */
+
+.t_image{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0b4646;
+    margin-top: -50px;
+}
+.t_card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0b4646;
+}
+
+/* ------------------- course Card -------------- */
+.c_card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0b4646;
+    transition: all 0.5s;
+}
+.c_card:hover{
+    background-color: #0b4646;
+    color: white;
+    transform: perspective(400px) rotateY(10deg);
+}
+.avatar{
+    background-color: transparent;
+}
+
+
+.details{
+    display: none;
+}
+/*!*styling for this demo*!*/
+/*body{margin:0;padding:0;}*/
+/*#imgWrap,#divWrap{height:40px;width:100%;}*/
+/*#img1,#img3{background:#b00;}*/
+/*#img2,#img4{background:#d00;}*/
+/*#div1{background:#077;}*/
+/*#div2{background:#0b0;}*/
+/*#div3{background:#b0b;}*/
+/*#div4{background:#555;}*/
+/*!*box attributes*!*/
+/*img,div {*/
+    /*float:left;*/
+    /*display:block;*/
+    /*height:40px;*/
+    /*width:40px;*/
+    /*cursor:pointer;*/
+    /*box-sizing:border-box;*/
+/*}*/
+/*#imgWrap .Active{*/
+    /*border:5px solid #58c;*/
+/*}*/
+/*!*fadeIn code*!*/
+/*#divWrap div{*/
+    /*!*display:none; Add display to remove reserved DOM space*!*/
+    /*opacity:0;*/
+/*}*/
+/*#divWrap .Active{*/
+    /*!*display:block;*!*/
+    /*opacity:1;*/
+    /*-webkit-animation:fadeUp ease-in-out 0.5s;*/
+    /*animation:fadeUp ease-in-out 0.5s;*/
+/*}*/
+/*@-webkit-keyframes fadeUp{*/
+    /*from{opacity:0;margin-top:30px;}*/
+    /*to  {opacity:1;margin-top:0;}*/
+/*}*/
+/*@keyframes fadeUp{*/
+    /*from{opacity:0;margin-top:30px;}*/
+    /*to  {opacity:1;margin-top:0;}*/
+/*}*/
