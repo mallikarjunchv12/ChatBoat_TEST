@@ -2,8 +2,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="css3/style1.css"/>
+    <link rel="stylesheet" href="css3/style.css"/>
+    <link rel="stylesheet" href="css3/responsive.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,11 +16,11 @@
 <body>
 <div style="height: 20px;"></div>
 <div class="container mt-2 h-auto">
-    <div class="row img_section">
+    <div class="row" style="border-radius: 30px; border:1px solid gray;">
         <div class="col-2">
-            <div class="card candidate_profile testimonial-card bg-transparent text-center profile_section">
+            <div class="card candidate_profile testimonial-card bg-transparent text-center" style="border-radius: 20px; margin-top: 20px; margin-bottom: 20px;">
                 <div class="avatar mx-auto pt-2">
-                    <i class="fa fa-user-circle-o fa-5x h-auto w-auto" aria-hidden="true"></i>
+                    <img src="img/profile.png" height="50px" width="50px" class="rounded-circle bg-transparent" alt="woman avatar">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Anna Doe</h6>
@@ -25,30 +29,27 @@
                 <p class="font-weight-bold">Full Stack Developer</p>
             </div>
         </div>
-
         <div class="col-9">
-
                 <div class="panel-group" id="accordion">
                     <div class="panel">
                         <div class="panel-heading">
-                            <div class="btn btn-lg btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Summary</div>
-                            <div class="btn btn-lg btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Skills</div>
-                            <div class="btn btn-lg btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Projects</div>
-                            <div class="btn btn-lg btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Certificates</div>
-                            <div class="btn btn-lg btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Personnel Details</div>
-                            <div class="btn btn-lg btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse6">About Candidate</div>
-
+                            <div class="btn btn-md btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Summary</div>
+                            <div class="btn btn-md btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Skills</div>
+                            <div class="btn btn-md btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Projects</div>
+                            <div class="btn btn-md btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Certificates</div>
+                            <div class="btn btn-md btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Personnel Details</div>
+                            <div class="btn btn-md btn-blue rounded-pill" data-toggle="collapse" data-parent="#accordion" href="#collapse6">About Candidate</div>
                         </div>
                         <div id="collapse1" class="panel-collapse collapse in">
                             <div class="panel-body">
-                                <p class="font-weight-bold">PROFESSIONAL SUMMARY</p>
-                             <div> Certified Workforce Development Professional / Career Specialist offering experience
+                                <b>PROFESSIONAL SUMMARY</b>
+                              Certified Workforce Development Professional / Career Specialist offering experience
                                  providing tailored career counseling, coaching, and job seeker services.
                                  Work well with clients from all walks of life to identify values, develop possible career paths,
                                  and design effective job search strategies. 90% successful employment placement rate.
-                                 Proficient with database programs including Oracle and Microsoft SQL Server. </div>
-                               <div>
-                                   <p class="font-weight-bold">Key Skills</p>
+                                 Proficient with database programs including Oracle and Microsoft SQL Server.
+                                <br>
+                               <b>Key Skills</b>
                                 <ul>
                                     <li> Individual Employment Plans </li>
                                  <li>   Resume Writing Assistance </li>
@@ -58,50 +59,36 @@
                                     <li> Professional Networking Strategies </li>
                                     <li> Career Portfolios </li>
                                     <li> Training Programs. </li>
-                               </ul>
-                               </div>
-                                <p class="font-weight-bold">WORK EXPERIENCE </p>
-<div>
-    <p class="font-weight-bold">  Workforce Investment Act Career Specialist  </p>(February 2017 - Present)
+                                </ul>
+                                <b> WORK EXPERIENCE </b>
+                                <br>
+                              <b>  Workforce Investment Act Career Specialist  </b>(February 2017 - Present)
                                 Arbor Education and Training, Boynton Beach, FL
-
-                               <p> Promoted to provide career management services to the universal population,
-                                   assessing job readiness and preparing clients for entry / re-entry into the workforce.
-                                   Duties include intake, interviewing, eligibility verification, referrals to supportive services
-                                   and employer services, career coaching, and job search and orientation / classroom instruction.
-                                   Serve as client liaison with instructors, businesses, and other client resources.</p> </div>
-
+                               <br> Promoted to provide career management services to the universal population, assessing job readiness and preparing clients for entry / re-entry into the workforce. Duties include intake, interviewing, eligibility verification, referrals to supportive services and employer services, career coaching, and job search and orientation / classroom instruction. Serve as client liaison with instructors, businesses, and other client resources.
                                <p>Achieved and consistently maintained successful employment placement rate of 90%.
                                 Demonstrated strong understanding of labor market, vocational systems, One-Stop services,
                                    and One-Stop referral system. </p>
-                                <p class="font-weight-bold">  Eligibility Career Specialist (November 2013 - January 2017) </p>
+                              <b>  Eligibility Career Specialist (November 2013 - January 2017) </b>
                                    Arbor Education and Training, Boynton Beach, FL
-<p>
+
                                 Conducted intake interviews and administered screening forms to ascertain client eligibility for public
                                 assistance services. Provided initial and follow-up support to clients, scheduled eligibility review dates,
                                 and resolved eligibility issues. Meticulously maintained documentation in database and hard copy case files.
-                                Provided referrals to community-based partners and agencies.</p>
+                                Provided referrals to community-based partners and agencies. <br>
 
-                               <p> Hand-selected by senior management to serve as Project Support Associate Specialist /
-                                   Team Leader tasked with providing customized training opportunities for students. </p>
+                                Hand-selected by senior management to serve as Project Support Associate Specialist / Team Leader tasked with providing customized training opportunities for students.
+                                <br><b> EDUCATION </b>
+                                <b>B.A., Business Administration </b><br>
+                                2016 Fort Lauderdale College, Fort Lauderdale, Florida
+                                <br>
+                               <b> Florida Certified Workforce Professional Certified Professional – Job Seeker Services </b><br>
+                                2017 Dynamic Works Institute, Rockledge, Florida
+                                <br> <b> Citizen Contact Skills </b><br>
+                                Institute of Government, Palm Beach Community College, Lake Worth, Florida
 
-                                <p class="font-weight-bold"> EDUCATION </p>
-
-                                <p class="font-weight-bold"> B.A., Business Administration </p>
-                               <p> 2016 Fort Lauderdale College, Fort Lauderdale, Florida
-                               </p>
-                                <p class="font-weight-bold"> Florida Certified Workforce Professional Certified Professional
-                                    – Job Seeker Services </p>
-                                <p>
-                                    2017 Dynamic Works Institute, Rockledge, Florida</p>
-
-                                <p class="font-weight-bold">Citizen Contact Skills </p>
-                                <p>
-                                    Institute of Government, Palm Beach Community College, Lake Worth, Florida</p>
-
-                                <p class="font-weight-bold"> ASSOCIATIONS </p>
-                               <p>Dynamic Works Institute – DWI National Association of Workforce Development Professionals
-                                NAWDP South Eastern Employment and Training Association - SETA </p>
+                                <br> <b>  ASSOCIATIONS </b><br>
+                                Dynamic Works Institute – DWI National Association of Workforce Development Professionals
+                                NAWDP South Eastern Employment and Training Association - SETA
                             </div>
                         </div>
                         <div id="collapse6" class="panel-collapse collapse">
@@ -110,7 +97,6 @@
                                 CID : C3456987
                             </div>
                         </div>
-
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
                               <p>Languages -  JAVA, SQL
@@ -127,44 +113,30 @@
                                 Build Tool	- Maven
                                 Tools	Log4j, SVN, Maven, JUNIT, PMD, JIRA, Jenkins
                                 Database	Oracle 11g </p>
-
                             </div>
                         </div>
-
-
-
-
-
-
                         <div id ="collapse5"  class="panel-collapse collapse">
                             <div class="panel-body">
-
                                 DETAILS Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </div>
                         </div>
-
                         <div id ="collapse4"  class="panel-collapse collapse">
                             <div class="panel-body">
-
                                 DETAILS Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
                             </div>
                         </div>
-
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
-
                               <br>  Project#1:  Gate Pass Application
                                 <br>  •	Client		: XYZ Inc.
                                 <br>  •	Role		: Java Developer
                                 <br>  •	Duration	: March2018to Till Now.
                                 <br>  Project Description:
                                 <br>   GPA is an intra organization application and is also known as Gate Pass Application System. GPA is providing to recording details pertaining to returnable and Non-Returnable Moving in and out of security gates of the Organization. It is used to check whether the reporting person authorized signatory or not. If Authorized the Material Move in/out of the organization. GPA having three different logins respectably their duties. The GPA modules are 1. Plant 2. Security Agent 3. IRO. These modules will handle their own duties.
-
                                 <br>  Responsibilities:
                                 <br>  	Understanding the customer requirements and functionality of the application.
                                 <br>  	Involved in coding for web-based application using spring Framework.
@@ -177,46 +149,21 @@
                                 <br>  	Implemented backend Validations.
                                 <br>  	Involved in client meetings and client calls to get business requirements.
                                 <br>   Involved in developing different kinds of reports like returnable, non-returnable, pending returnable and gate wise material count reports.
-
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
         </div>
-
         <div class="col-1" style="text-align: right;">
-            <div class="card candidate_profile testimonial-card bg-transparent text-center w-auto h-auto chat_section">
+            <div class="card candidate_profile testimonial-card bg-transparent text-center w-auto h-auto"  style="border-radius: 20px;
+             margin-top: 20px; padding: 5px 0px 10px 0px;">
                 <p style="font-weight:bold; margin-top: 13px;">Connect</p>
-                <a href="#"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i></a>
                 <a href="mailto:sharmaanku908@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
                 <a href="tel:+919518387602"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></a>
-
-            </div></div>
-
-    </div></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -4,12 +4,35 @@
     }
 
 
-    #searchBar{
+    #searchText{
         border:#007bff solid;
         border-width: .2em;
         border-radius: .7em .7em .7em .7em;
         padding: .2em .2em .2em .5em;
         width: 800px;
+    }
+    .serach {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2rem 0px 1.4rem 0px;
+    }
+    .mypage {
+        width: 100%;
+        display: flex;
+    }
+    .serch_box {
+        margin: 0 auto;
+    }
+    div#output {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px 0px 20px;
+    }
+    #searchField{
+        display: none;
     }
 
    /* #searchBtn{

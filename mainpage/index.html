@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>app</title>
   <meta charset="utf-8">
@@ -9,125 +10,586 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.2.0/handlebars.js"></script>
   <link href="css/style1.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-md bg-primary navbar-dark">
-  <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-	
-	
-      <li class="nav-item">
-        <a class="nav-link" href="#top_content"target="_blank" style="color:#fff;font-size:13PX;">INTELLIGENT SEARCH<sup>1</sup></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="recruiter_chatbot.html" target="_blank" style="color:#fff;font-size:13PX;">RECRUITER CHATBOT<sup>2</sup></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="candidate_chatbot.html" target="_blank" style="color:#fff;font-size:13PX;">CANDIDATE CHATBOT<sup>3</sup></a>
-      </li> 
-		<li class="nav-item">
-        <a class="nav-link" href="email_scheduler.html" target="_blank" style="color:#fff;font-size:13PX;">EMAIL SCHEDULER<sup>4</sup></a>
-      </li> 
-		<li class="nav-item">
-        <a class="nav-link" href="chatbot_scheduler.html" target="_blank" style="color:#fff;font-size:13PX;">CHATBOT SCHEDULER<sup>5</sup></a>
-      </li> 
-		<li class="nav-item">
-        <a class="nav-link" href="candidatepage.html" target="_blank" style="color:#fff;font-size:13PX;">AUTO CANDIDATE UPDATE<sup>6</sup></a>
-      </li> 
-		<li class="nav-item">
-        <a class="nav-link" href="submit_jd.html" target="_blank" style="color:#fff;font-size:13PX;">UPLOAD FILES<sup>7</sup></a>
-      </li>
-	 <li class="nav-item">
-        <a class="nav-link" href="submit_jd.html" target="_blank" style="color:#fff;font-size:13PX;">UPLOAD JD<sup>8</sup></a>
-      </li> 
-	  
-<!----SIGN INOPEN-->
-		<li class="nav-item">
-        
-    
-<div class="container">
-  
-  <!-- Trigger the modal with a button -->
- <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal" style="color:#fff;font-size:13PX;"> SIGN IN<sup>9</sup></a>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"></h4>
-        </div>
-        <div class="modal-body">
-          <p class="login_form_title">Log in form</p>
-          <div class="login-dark">
-            <form method="post">
-                <h2 class="sr-only">Login Form</h2>
-                <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a href="#" class="forgot">Forgot your email or password?</a></form>
-        </div>
-        </div>
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#top_content" target="_blank" style="color:#fff;font-size:13PX;">INTELLIGENT
+            SEARCH<sup>1</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recruiter_chatbot.html" target="_blank" style="color:#fff;font-size:13PX;">RECRUITER
+            CHATBOT<sup>2</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="candidate_chatbot.html" target="_blank" style="color:#fff;font-size:13PX;">CANDIDATE
+            CHATBOT<sup>3</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="email_scheduler.html" target="_blank" style="color:#fff;font-size:13PX;">EMAIL
+            SCHEDULER<sup>4</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chatbot_scheduler.html" target="_blank" style="color:#fff;font-size:13PX;">CHATBOT
+            SCHEDULER<sup>5</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank" style="color:#fff;font-size:13PX;">AUTO
+            CANDIDATE UPDATE<sup>6</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="submit_jd.html" target="_blank" style="color:#fff;font-size:13PX;">UPLOAD
+            FILES<sup>7</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="submit_jd.html" target="_blank" style="color:#fff;font-size:13PX;">UPLOAD
+            JD<sup>8</sup></a>
+        </li>
+
+        <!----SIGN INOPEN-->
+        <li class="nav-item">
+
+
+          <div class="container">
+
+            <!-- Trigger the modal with a button -->
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal" style="color:#fff;font-size:13PX;">
+              SIGN IN<sup>9</sup></a>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body">
+                    <p class="login_form_title">Log in form</p>
+                    <div class="login-dark">
+                      <form method="post">
+                        <h2 class="sr-only">Login Form</h2>
+                        <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+                        <div class="form-group"><input class="form-control" type="email" name="email"
+                            placeholder="Email"></div>
+                        <div class="form-group"><input class="form-control" type="password" name="password"
+                            placeholder="Password"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button>
+                        </div><a href="#" class="forgot">Forgot your email or password?</a>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+        <!---SIGN IN----->
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:#fff;font-size:13PX;">SIGN UP<sup>10</sup></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:#fff;font-size:13PX;">HOME<sup>11</sup></a>
+        </li>
+
+        <!---SIGNUP-OPEN------>
+        <!----SIGNUP--CLOSE----->
+      </ul>
+    </div>
+  </nav>
+  <!--Top_content-->
+  <div class="container">
+    <div class="row">
+      <div class="mypage">
+        <h2 class="serach">Intelligence search</h2>
       </div>
-      
+      <div class="serch_box">
+      <input id="searchText" type="text" placeholder="search">
+      <div id="output">
+        <script id="results" type="text/x-handlebars-template">
+          {{#each this}}
+          <div class="row sort-item" NEW_SKILL-name="{{name}}">
+              <a href="./candidatepage.html">{{name}}</a>
+            </div>
+          {{/each}}
+        </script>
+      </div>
+      </div>
     </div>
   </div>
-  
-</div>
+  <!--Top_content-->
+  <select id="searchField">
+    <option value="name">Name</option>
+  </select>
 
-</li>
+  <script>
+    var NEW_SKILL = [
+      {
+        "name": "well"
+      },
+      {
+        "name": "versed"
+      },
+      {
+        "name": "with"
+      },
+      {
+        "name": "net"
+      },
+      {
+        "name": "framework"
+      },
+      {
+        "name": "2"
+      },
+      {
+        "name": "."
+      },
+      {
+        "name": "0"
+      },
+      {
+        "name": "3"
+      },
+      {
+        "name": "."
+      },
+      {
+        "name": "5"
+      },
+      {
+        "name": "4"
+      },
+      {
+        "name": "."
+      },
+      {
+        "name": "0"
+      },
+      {
+        "name": "."
+      },
+      {
+        "name": "net"
+      },
+      {
+        "name": "."
+      },
+      {
+        "name": "net"
+      },
+      {
+        "name": "ado"
+      },
+      {
+        "name": "."
+      },
+      {
+        "name": "net"
+      },
+      {
+        "name": "2010"
+      },
+      {
+        "name": "microsoft_sql_server"
+      },
+      {
+        "name": "("
+      },
+      {
+        "name": "2005"
+      },
+      {
+        "name": "/"
+      },
+      {
+        "name": "2008"
+      },
+      {
+        "name": ")"
+      },
+      {
+        "name": "&"
+      },
+      {
+        "name": "services"
+      },
+      {
+        "name": "2010"
+      },
+      {
+        "name": "2008"
+      },
+      {
+        "name": "2005"
+      },
+      {
+        "name": "rtc"
+      },
+      {
+        "name": "competencies"
+      },
+      {
+        "name": "activities"
+      },
+      {
+        "name": "viz"
+      },
+      {
+        "name": "."
+      },
+      {
+        "name": "tracking"
+      },
+      {
+        "name": "&"
+      },
+      {
+        "name": "post"
+      },
+      {
+        "name": "support"
+      },
+      {
+        "name": "implementing"
+      },
+      {
+        "name": "project_plans"
+      },
+      {
+        "name": "within"
+      },
+      {
+        "name": "preset"
+      },
+      {
+        "name": "budgets"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "deadlines"
+      },
+      {
+        "name": "."
+      },
+      {
+        "name": "monitoring"
+      },
+      {
+        "name": "offshore"
+      },
+      {
+        "name": "for"
+      },
+      {
+        "name": "deliverables"
+      },
+      {
+        "name": "of"
+      },
+      {
+        "name": "concurrent"
+      },
+      {
+        "name": "projects"
+      },
+      {
+        "name": "understanding"
+      },
+      {
+        "name": "needs"
+      },
+      {
+        "name": "requirements"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "expectations"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "devise"
+      },
+      {
+        "name": "solutions"
+      },
+      {
+        "name": "accordingly"
+      },
+      {
+        "name": "implementing"
+      },
+      {
+        "name": "short"
+      },
+      {
+        "name": "/"
+      },
+      {
+        "name": "long"
+      },
+      {
+        "name": "term"
+      },
+      {
+        "name": "plans"
+      },
+      {
+        "name": "for"
+      },
+      {
+        "name": "achievement"
+      },
+      {
+        "name": "of"
+      },
+      {
+        "name": "objectives"
+      },
+      {
+        "name": "preparing"
+      },
+      {
+        "name": "compiling"
+      },
+      {
+        "name": "&"
+      },
+      {
+        "name": "presenting"
+      },
+      {
+        "name": "various"
+      },
+      {
+        "name": "weekly"
+      },
+      {
+        "name": "/"
+      },
+      {
+        "name": "monthly"
+      },
+      {
+        "name": "pertaining"
+      },
+      {
+        "name": "to"
+      },
+      {
+        "name": "capability"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "productivity"
+      },
+      {
+        "name": "heading"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "ensuring"
+      },
+      {
+        "name": "end"
+      },
+      {
+        "name": "to"
+      },
+      {
+        "name": "end"
+      },
+      {
+        "name": "ownership"
+      },
+      {
+        "name": "of"
+      },
+      {
+        "name": "incidents"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "service"
+      },
+      {
+        "name": "meeting"
+      },
+      {
+        "name": "deadlines"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "turnaround"
+      },
+      {
+        "name": "time"
+      },
+      {
+        "name": "without"
+      },
+      {
+        "name": "compromising"
+      },
+      {
+        "name": "quality"
+      },
+      {
+        "name": "norms"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "defining"
+      },
+      {
+        "name": "and"
+      },
+      {
+        "name": "adhering"
+      },
+      {
+        "name": "to"
+      },
+      {
+        "name": "sla"
+      },
+      {
+        "name": "coordinating"
+      },
+      {
+        "name": "s"
+      },
+      {
+        "name": "needs"
+      },
+      {
+        "name": "enhancements"
+      },
+      {
+        "name": "customisation"
+      },
+      {
+        "name": "software"
+      },
+      {
+        "name": "related"
+      },
+      {
+        "name": "issue"
+      },
+      {
+        "name": "of"
+      },
+      {
+        "name": "clients"
+      },
+      {
+        "name": "to"
+      },
+      {
+        "name": "provide"
+      },
+      {
+        "name": "solutions"
+      },
+      {
+        "name": "in"
+      },
+      {
+        "name": "adherence"
+      },
+      {
+        "name": "to"
+      },
+      {
+        "name": "experienced"
+      },
+      {
+        "name": "with"
+      },
+      {
+        "name": "working"
+      },
+      {
+        "name": "with"
+      },
+      {
+        "name": "teams"
+      },
+      {
+        "name": "from"
+      },
+      {
+        "name": "multiple"
+      },
+      {
+        "name": "time"
+      },
+      {
+        "name": "zones"
+      },
+    ];
+    var logTime = {};
+    function searchEngine(searchString, searchKey, searchData) {
+      logTime.start = Date.now();
+      var result = [];
 
+      $.each(searchData, function (i, item) {
+        if (this[searchKey].toLowerCase().indexOf(searchString) > 0) {
+          result.push(item);
+        }
+      });
+      return result;
+    };
+    var source = $("#results").html();
+    var template = Handlebars.compile(source);
+    $("#searchText, #searchField").on("change paste keyup", function () {
+      var searchText = $("#searchText").val().toLowerCase();
+      var searchField = $("#searchField").val();
+      console.log(searchField);
+      var searchResult = searchEngine(searchText, searchField, NEW_SKILL)
+      var html = template(searchResult);
 
-<!---SIGN IN----->
-<li class="nav-item">
-        <a class="nav-link" href="#" style="color:#fff;font-size:13PX;">SIGN UP<sup>10</sup></a>
-      </li> 
-
-<li class="nav-item">
-        <a class="nav-link" href="#" style="color:#fff;font-size:13PX;">HOME<sup>11</sup></a>
-      </li>
-
-<!---SIGNUP-OPEN------>
-
-
-
-
-<!----SIGNUP--CLOSE----->
-
-	  
-    </ul>
-  </div>  
-</nav>
-<br>
-
-
-<!--Top_content-->
-	<section id="top_content" class="top_cont_outer">
-		<div class="container">
-		<h2 style="text-align:center;margin:20px 20px;">Intelligence search</h2>
-		
-		<div id="searchBarWrap">
-        <input id="searchBar" type="text" name="searchbar" placeholder="Search..."/>
-        <!--<button id="searchBtn"></button>-->
-    </div>
-		
-		</div>
-	</section>
-	<!--Top_content-->
-  
-
-
+      $("#output").html(html);
+      var execTime = Date.now() - logTime.start;
+      logTime.start = 0;
+    });
+  </script>
 </body>
+
 </html>
-
-
